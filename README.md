@@ -15,15 +15,13 @@ https://github.com/Fabrizio-Caruso/CROSS-CHASE
 
 HOW TO USE:
 1) You need to download and install the CMOC compiler in a POSIX environment (e.g., Linux, Cygwin): https://perso.b2b2c.ca/~sarrazip/dev/cmoc.html
-2) You need to have a Makefile tool
+2) You need to install Makefile in your environment
 3) You need to clone this repository or at least use the provided C code
-4) Run make mo5_ex1
+4) Run: make mo5_ex1
 5) The produced binaries are found in the "build" directory. They can be loaded into an emulator (or real hardware). 
 
 HOW TO LOAD THE BINARY:
 - Use DCMOTO: http://dcmoto.free.fr/
 - Select the model (Use any model M for the example mo5_ex) through "Options"
 - Attach the .k5 file in the build directory through "Support amovibles" -> "Cassette..."
-- Type:
-LOADM
-EXEC
+- Type: LOADM followed by EXEC
