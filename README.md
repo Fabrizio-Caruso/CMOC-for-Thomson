@@ -13,12 +13,15 @@ Support for the T series (Thomson To7/To8/To9) will be added later.
 A slightly different and more complete version of this library is used in my universal game Cross Chase:
 https://github.com/Fabrizio-Caruso/CROSS-CHASE
 
-HOW TO USE:
-1) You need to download and install the CMOC compiler in a POSIX environment (e.g., Linux, Cygwin): https://perso.b2b2c.ca/~sarrazip/dev/cmoc.html
-2) You need to install Makefile in your environment
-3) You need to clone this repository or at least use the provided C code
-4) Run: make mo5_ex1
-5) The produced binaries are found in the "build" directory. They can be loaded into an emulator (or real hardware). 
+PREREQUISITES
+1) A POSIX environment (e.g., Linux, Cygwin under Windows, etc.)
+1) The CMOC compiler installed in your POSIX environment : https://perso.b2b2c.ca/~sarrazip/dev/cmoc.html
+2) Makefile installed in your environment
+3) The content of this repository or at least the provided C files
+
+HOW TO BUILD THE EXAMPLE:
+- Run: make mo5_ex1
+- The produced binaries are found in the "build" directory. They can be loaded into an emulator (or real hardware). 
 
 HOW TO LOAD THE BINARY:
 - Use DCMOTO: http://dcmoto.free.fr/
