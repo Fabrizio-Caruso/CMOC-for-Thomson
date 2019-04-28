@@ -5,6 +5,10 @@
 
 #define VIDEO_ADDR 0x0000
 
+#if defined(__MO6__)
+	#define COLOR_VALUE 0xA7DA
+	#define PEN_INDEX   0cA7DB
+#endif
 
 void SWITCH_COLOR_BANK_ON(void)
 {
@@ -72,4 +76,11 @@ unsigned char GETCH(void)
 	return res;	
 }
 
-
+#if defined(__MO6__)
+void palette(unsigned char pen, unsigned char red, unsigned char green, unsigned char blue)
+{
+	POKE(PEN_INDEX,pen<<1);
+	POKE(COLOR_VALUE,(green<<4)+blue);
+	POKE(COLOR_VALUE,red);
+}
+#endif 

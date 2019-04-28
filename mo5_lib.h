@@ -18,3 +18,8 @@ void gotoxy(unsigned char xx, unsigned char yy);
 
 unsigned char GETCH(void);
 
+#if defined(__MO6__)
+	void palette(unsigned char pen, unsigned char red, unsigned char green, unsigned char blue)
+#endif
+
+
